@@ -16,4 +16,6 @@ int main(void) {
 
     free(arr);
     arr = NULL;
+    
+    return 0;
 }
