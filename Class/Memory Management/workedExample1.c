@@ -44,5 +44,8 @@ int main(void) {
         printf("\"%s\" not found.\n", target);
     }
 
+    free(names);
+    names = NULL;
+
     return 0;
 }
