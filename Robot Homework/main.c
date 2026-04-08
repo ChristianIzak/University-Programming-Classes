@@ -1,53 +1,55 @@
 #include <stdio.h>
-#include <math.h>
 #include "rover.h"
 
-//battery = battery - sqrt(pow((new_rover_x - rover_x), 2) + pow((new_rover_y - rover_y), 2));
+int main()
+{
 
-void main(void) {
+    // Initialize the two floats
     float rover_x, rover_y;
-    float new_rover_x, new_rover_y;
-    double battery;
-    int alive = 1;
 
-    // Initialization settings
-
+    // Scan the floats
     scanf("%f", &rover_x);
     scanf("%f", &rover_y);
+
+    // Initialize the battery
+    double battery;
+
+    // Scan the battery
     scanf("%lf", &battery);
 
-    //rover_status(rover_x, rover_y, battery);
+    // Print Status
+    printf("Rover Status:\n");
+    print_status(rover_x, rover_y, battery);
 
-    printf("Rover Status:\nLocation: [X=%.1f, Y=%.1f]\nBattery: %.1lf%%\n", rover_x, rover_y, battery);
+    // Initialize the loop
+    while (1)
+    {
 
-    // Start the loop to move robot and check if valid
+        // Initialize the two new floats
+        float new_rover_x, new_rover_y;
 
-    while (alive) {
+        // Scan the floats
         scanf("%f", &new_rover_x);
         scanf("%f", &new_rover_y);
 
-        //printf("\nMove Type: %d\n\n", moveType(rover_x, rover_y, new_rover_x, new_rover_y));
+        // Check if its a valid move
+        int valid_move = is_move_valid(rover_x, rover_y, new_rover_x, new_rover_y);
 
-        switch (moveType(rover_x, rover_y, new_rover_x, new_rover_y)) {
-            case 1:
-                // In this case, the robot will move in the Y direction (Move type 1)
-                move_robot(&rover_x, &rover_y, &new_rover_x, &new_rover_y, &battery, 1, &alive);
-                fin_rover_status(rover_x, rover_y, battery);
-                continue;
-            case 2:
-                // In this case, the robot will move in the X direction (Move type 2)
-                move_robot(&rover_x, &rover_y, &new_rover_x, &new_rover_y, &battery, 2, &alive);
-                fin_rover_status(rover_x, rover_y, battery);
-                continue;
-            case 3:
-                // In this case, the robot will shut down because the user inputted the coordinates (0,0)
-                move_robot(&rover_x, &rover_y, &new_rover_x, &new_rover_y, &battery, 3, &alive);
-                //fin_rover_status(rover_x, rover_y, battery);
-                break;
-            default:
-                printf("Cannot move diagonally!\n");
+        // Process what action to take
+        switch (valid_move)
+        {
+        case -1:
+            return 0;
+        case 0:
+            continue;
+        default:
+            move_rover(&rover_x, &rover_y, new_rover_x, new_rover_y, &battery);
+            ;
         }
+
+        printf("Final Rover Status:\n");
+        print_status(rover_x, rover_y, battery);
     }
 
-    printf("Shutting down.");
+    return 0;
 }
