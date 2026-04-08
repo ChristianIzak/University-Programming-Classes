@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(rover main.c
         rover.c
-        rover.h)
+        rover.h
+        map.c
+        map.h)

@@ -27,7 +27,7 @@ void init_map(char my_map[MAP_HEIGHT][MAP_WIDTH],
         if (x >= 0 && x < MAP_WIDTH && y >= 0 && y < MAP_HEIGHT) {
             my_map[y][x] = 'S'; // Place sample
         }
-    }sdgfsdg
+    }
 }
 
 
