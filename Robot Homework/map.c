@@ -17,7 +17,7 @@ void init_map(char my_map[MAP_HEIGHT][MAP_WIDTH],
         int x = obs_x[i];
         int y = obs_y[i];
         if (x >= 0 && x < MAP_WIDTH && y >= 0 && y < MAP_HEIGHT) {
-            my_map[y][x] = 'X'; // Place obstacle
+            my_map[x][y] = 'X'; // Place obstacle
         }
     }
 
@@ -25,7 +25,7 @@ void init_map(char my_map[MAP_HEIGHT][MAP_WIDTH],
         int x = samp_x[i];
         int y = samp_y[i];
         if (x >= 0 && x < MAP_WIDTH && y >= 0 && y < MAP_HEIGHT) {
-            my_map[y][x] = 'S'; // Place sample
+            my_map[x][y] = 'S'; // Place sample
         }
     }
 }
@@ -37,10 +37,10 @@ void print_map(char my_map[MAP_HEIGHT][MAP_WIDTH],
 
     for(int i = 0; i < MAP_HEIGHT; i++) {
         for (int j = 0; j < MAP_WIDTH; j++) {
-            if (i == rover_y && j == rover_x) {
-                printf("R "); // Print rover at its current position
+            if (i == rover_x && j == rover_y) {
+                printf("R"); // Print rover at its current position
             } else {
-                printf("%c ", my_map[i][j]); // Print the map cell
+                printf("%c", my_map[i][j]); // Print the map cell
             }
         }
         printf("\n");

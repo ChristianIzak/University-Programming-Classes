@@ -24,7 +24,7 @@ int main()
     samp_x = malloc(nSamples * sizeof(int));
     samp_y = malloc(nSamples * sizeof(int));
 
-    printf("Enter X coordinated of obstacles: ");
+    printf("Enter X coordinates of obstacles: ");
     for (int i = 0; i < nObstacles; i++) {
         scanf("%d", &obs_x[i]);
     }
@@ -52,10 +52,6 @@ int main()
 
     printf("Enter initial battery: ");
     scanf("%lf", &battery);
-
-    // Print Status
-    printf("Rover Status:\n");
-    print_status(rover_x, rover_y, battery);
 
     init_map(my_map, obs_x, obs_y, nObstacles, samp_x, samp_y, nSamples);
 
