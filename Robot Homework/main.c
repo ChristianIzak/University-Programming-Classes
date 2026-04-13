@@ -4,7 +4,7 @@
 
 //battery = battery - sqrt(pow((new_rover_x - rover_x), 2) + pow((new_rover_y - rover_y), 2));
 
-void main(void) {
+int main(void) {
     float rover_x, rover_y;
     float new_rover_x, new_rover_y;
     double battery;
@@ -50,4 +50,6 @@ void main(void) {
     }
 
     printf("Shutting down.");
+
+    return 0;
 }
