@@ -10,12 +10,6 @@ int main()
 
     int nObstacles, nSamples, *obs_x, *obs_y, *samp_x, *samp_y, rover_x, rover_y;
 
-<<<<<<< HEAD
-int main(void) {
-    float rover_x, rover_y;
-    float new_rover_x, new_rover_y;
-=======
->>>>>>> c8d82b0dbdc8f1a08585634e9d515c694e40246e
     double battery;
 
     printf("Enter number of coordinates for obstacles: ");
@@ -93,11 +87,5 @@ int main(void) {
             printf("Unknown command. ");
         }
     }
-
-<<<<<<< HEAD
-    printf("Shutting down.");
-
-=======
->>>>>>> c8d82b0dbdc8f1a08585634e9d515c694e40246e
     return 0;
 }
