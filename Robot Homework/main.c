@@ -1,55 +1,103 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 #include "rover.h"
+#include "map.h"
 
-//battery = battery - sqrt(pow((new_rover_x - rover_x), 2) + pow((new_rover_y - rover_y), 2));
+int main()
+{
 
+    char my_map[MAP_HEIGHT][MAP_WIDTH];
+
+    int nObstacles, nSamples, *obs_x, *obs_y, *samp_x, *samp_y, rover_x, rover_y;
+
+<<<<<<< HEAD
 int main(void) {
     float rover_x, rover_y;
     float new_rover_x, new_rover_y;
+=======
+>>>>>>> c8d82b0dbdc8f1a08585634e9d515c694e40246e
     double battery;
-    int alive = 1;
 
-    // Initialization settings
+    printf("Enter number of coordinates for obstacles: ");
+    scanf("%d", &nObstacles);
 
-    scanf("%f", &rover_x);
-    scanf("%f", &rover_y);
+    printf("Enter number of coordinates for samples: ");
+    scanf("%d", &nSamples);
+
+    obs_x = malloc(nObstacles * sizeof(int));
+    obs_y = malloc(nObstacles * sizeof(int));
+
+    samp_x = malloc(nSamples * sizeof(int));
+    samp_y = malloc(nSamples * sizeof(int));
+
+    printf("Enter X coordinates of obstacles: ");
+    for (int i = 0; i < nObstacles; i++) {
+        scanf("%d", &obs_x[i]);
+    }
+
+    printf("Enter Y coordinates of obstacles: ");
+    for (int i = 0; i < nObstacles; i++) {
+        scanf("%d", &obs_y[i]);
+    }
+
+    printf("Enter X coordinates of samples: ");
+    for (int i = 0; i < nSamples; i++) {
+        scanf("%d", &samp_x[i]);
+    }
+
+    printf("Enter Y coordinates of samples: ");
+    for (int i = 0; i < nSamples; i++) {
+        scanf("%d", &samp_y[i]);
+    }
+
+    printf("Enter initial X: ");
+    scanf("%d", &rover_x);
+
+    printf("Enter initial Y: ");
+    scanf("%d", &rover_y);
+
+    printf("Enter initial battery: ");
     scanf("%lf", &battery);
 
-    //rover_status(rover_x, rover_y, battery);
+    init_map(my_map, obs_x, obs_y, nObstacles, samp_x, samp_y, nSamples);
 
-    printf("Rover Status:\nLocation: [X=%.1f, Y=%.1f]\nBattery: %.1lf%%\n", rover_x, rover_y, battery);
+    // Clear the input buffer before switching to fgets
+    int c;
+    while ((c = getchar()) != '\n' && c != EOF) { }
 
-    // Start the loop to move robot and check if valid
+    // Initialize the loop
+    while (1)
+    {
 
-    while (alive) {
-        scanf("%f", &new_rover_x);
-        scanf("%f", &new_rover_y);
+        printf("> ");
 
-        //printf("\nMove Type: %d\n\n", moveType(rover_x, rover_y, new_rover_x, new_rover_y));
+        char line[100];
+        char command[100];
+        char direction[100];
+        int distance;
 
-        switch (moveType(rover_x, rover_y, new_rover_x, new_rover_y)) {
-            case 1:
-                // In this case, the robot will move in the Y direction (Move type 1)
-                move_robot(&rover_x, &rover_y, &new_rover_x, &new_rover_y, &battery, 1, &alive);
-                fin_rover_status(rover_x, rover_y, battery);
-                continue;
-            case 2:
-                // In this case, the robot will move in the X direction (Move type 2)
-                move_robot(&rover_x, &rover_y, &new_rover_x, &new_rover_y, &battery, 2, &alive);
-                fin_rover_status(rover_x, rover_y, battery);
-                continue;
-            case 3:
-                // In this case, the robot will shut down because the user inputted the coordinates (0,0)
-                move_robot(&rover_x, &rover_y, &new_rover_x, &new_rover_y, &battery, 3, &alive);
-                //fin_rover_status(rover_x, rover_y, battery);
-                break;
-            default:
-                printf("Cannot move diagonally!\n");
+        fgets(line, sizeof(line), stdin);
+
+        sscanf(line, "%s", command);
+
+        if(strcmp(command, "quit") == 0) {
+            break;
+        } else if(strcmp(command, "status") == 0) {
+            print_status(rover_x, rover_y, battery);
+        } else if(strcmp(command, "map") == 0) {
+            print_map(my_map, rover_x, rover_y);
+        } else if(strcmp(command, "move") == 0) {
+            sscanf(line, "%*s %s %d", direction, &distance);
+            perform_move(&rover_x, &rover_y, &battery, my_map, direction, distance);
+        } else {
+            printf("Unknown command. ");
         }
     }
 
+<<<<<<< HEAD
     printf("Shutting down.");
 
+=======
+>>>>>>> c8d82b0dbdc8f1a08585634e9d515c694e40246e
     return 0;
 }

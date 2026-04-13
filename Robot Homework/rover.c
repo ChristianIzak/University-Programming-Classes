@@ -1,101 +1,103 @@
-//
-// Created by Christian Izak on 3/18/26.
-//
-
+// Example inside rover.c
 #include "rover.h"
+#include <string.h>
+#include <stdio.h> // For printf
 
-#include <stdio.h>
-#include <stdlib.h>
+void print_status(int rover_x, int rover_y, double battery)
+{
 
-void rover_status(float x, float y, double battery) {
-    printf("Rover Status:\nLocation: [X=%.1f, Y=%.1f]\nBattery: %.1lf%%\n", x, y, battery);
+    // Print status
+    printf("Location: [X=%d, Y=%d]\n", rover_x, rover_y);
+    printf("Battery: %.1lf%%\n", battery);
 }
 
-void fin_rover_status(float x, float y, double battery) {
-    printf("Final Rover Status:\nLocation: [X=%.1f, Y=%.1f]\nBattery: %.1lf%%\n", x, y, battery);
-}
-
-int moveType(float rover_x, float rover_y, float new_rover_x, float new_rover_y) {
-    if ((new_rover_y != rover_y) && ((new_rover_x - rover_x) == 0.0)) {
-        // This move type is if Y changes and X does not
-        return 1;
-    } else if (((new_rover_x != rover_x) && ((new_rover_y - rover_y) == 0.0))) {
-        // This move type is if X changes and Y does not
-        return 2;
-    } else if ((new_rover_x == 0.0 && new_rover_y == 0.0)) {
-        // This move type is if the robot goes back to base and shuts down
-        return 3;
+int scan_current_tile(int rover_x, int rover_y, double battery,
+    char my_map[MAP_HEIGHT][MAP_WIDTH]) 
+    {
+    
+    if (battery < 1.0) {
+        printf("Out of battery!\n");
+        return 500;
+    } else if (rover_x < 0 || rover_x >= MAP_HEIGHT || rover_y < 0 || rover_y >= MAP_WIDTH) {
+        printf("Hit map boundary!\n");
+        return 502;
+    } else if(my_map[rover_x][rover_y] == 'X') {
+        printf("Obstacle detected!\n");
+        return 501;
     } else {
-        //printf("Error. Move Type 0!");
-        return 0;
+        return 200;
     }
 }
 
-void move_robot(float* rover_x, float* rover_y, float* new_rover_x, float* new_rover_y, double* battery, int moveType, int* alive) {
+void perform_move(int *rover_x, int *rover_y, double *battery, char my_map[MAP_HEIGHT][MAP_WIDTH], char *direction, int distance) {
+    int distanceLeft = distance;
 
-    switch (moveType) {
-        case 1:
-            // If Y position does not change but X does
-
-            int offset1 = (int)(*new_rover_y - *rover_y);
-
-            for (int i = 1; i <= abs(offset1); i++) {
-
-                if (*battery >= 1.0) {
-                    *battery -= 1;
-                    if (offset1 < 0)
-                    {
-                        *rover_y -= 1;
+    while (distanceLeft > 0) {
+        if(strcmp(direction, "east") == 0) {
+            switch (scan_current_tile(*rover_x, (*rover_y) + 1, *battery, my_map)) {
+                case 500:
+                    return;
+                case 501:
+                    return;
+                case 502:
+                    return;
+                default:
+                    (*rover_y)++;
+                    (*battery)--;
+                    if(my_map[*rover_x][*rover_y] == 'S') {
+                        printf("Sample collected!\n");
+                        my_map[*rover_x][*rover_y] = '.'; // Mark sample as collected
                     }
-                    else
-                    {
-                        *rover_y += 1;
-                    }
-
-                    printf("Rover moving...\n");
-
-                    rover_status(*rover_x, *rover_y, *battery);
-                } else {
-                    printf("Out of battery! Move incomplete.\n");
-                    *alive = 0;
-                    break;
-                }
-                // if (*rover_y == *new_rover_y) { printf("Move Complete!"); break; }
             }
-            break;
-
-        case 2:
-            // This move type is if Y changes and X does not
-
-            int offset2 = (int)(*new_rover_x - *rover_x);
-
-            for (int i = 1; i <= abs(offset2); i++) {
-                if (*battery >= 1.0) {
-                    *battery -= 1;
-                    if (offset2 < 0)
-                    {
-                        *rover_x -= 1;
+        } else if(strcmp(direction, "west") == 0) {
+            switch (scan_current_tile(*rover_x, (*rover_y) - 1, *battery, my_map)) {
+                case 500:
+                    return;
+                case 501:
+                    return;
+                case 502:
+                    return;
+                default:
+                    (*rover_y)--;
+                    (*battery)--;
+                    if(my_map[*rover_x][*rover_y] == 'S') {
+                        printf("Sample collected!\n");
+                        my_map[*rover_x][*rover_y] = '.'; // Mark sample as collected
                     }
-                    else
-                    {
-                        *rover_x += 1;
-                    }
-
-                    printf("Rover moving...\n");
-
-                    rover_status(*rover_x, *rover_y, *battery);
-                } else {
-                    printf("Out of battery! Move incomplete.\n");
-                    *alive = 0;
-                    break;
-                }
             }
-            break;
-
-        case 3:
-            *alive = 0;
-            break;
-
-        default: break;
+        } else if(strcmp(direction, "south") == 0) {
+            switch (scan_current_tile((*rover_x) + 1, *rover_y, *battery, my_map)) {
+                case 500:
+                    return;
+                case 501:
+                    return;
+                case 502:
+                    return;
+                default:
+                    (*rover_x)++;
+                    (*battery)--;
+                    if(my_map[*rover_x][*rover_y] == 'S') {
+                        printf("Sample collected!\n");
+                        my_map[*rover_x][*rover_y] = '.'; // Mark sample as collected
+                    }
+            }
+        } else if(strcmp(direction, "north") == 0) {
+            switch (scan_current_tile((*rover_x)-1, *rover_y, *battery, my_map)) {
+                case 500:
+                    return;
+                case 501:
+                    return;
+                case 502:
+                    return;
+                default:
+                    (*rover_x)--;
+                    (*battery)--;
+                    if(my_map[*rover_x][*rover_y] == 'S') {
+                        printf("Sample collected!\n");
+                        my_map[*rover_x][*rover_y] = '.'; // Mark sample as collected
+                    }
+            }
+        }
+        distanceLeft--;
     }
 }
