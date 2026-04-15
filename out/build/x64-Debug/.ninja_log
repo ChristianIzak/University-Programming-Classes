@@ -1,0 +1,10 @@
+# ninja log v6
+6	43	7979854951534974	CMakeFiles/BonusQuestion.dir/Bonus_Question/scheduler.c.obj	60c3eeb06b0cc13f
+3	44	7979854951504979	CMakeFiles/BonusQuestion.dir/Bonus_Question/main.c.obj	345cbd2dfe85a03a
+45	235	7979854951915523	BonusQuestion.exe	99036b0c001b3ff5
+8	48	7979855450406796	CMakeFiles/RobotHomework.dir/Robot_Homework/map.c.obj	703e8e38c46fae8
+5	51	7979855450366710	CMakeFiles/RobotHomework.dir/Robot_Homework/main.c.obj	2e8e6373ae863d2f
+12	55	7979855450436796	CMakeFiles/RobotHomework.dir/Robot_Homework/rover.c.obj	2354e6a48d0d2e25
+55	249	7979855450869591	RobotHomework.exe	50b2a77cb718e848
+4	46	7979857662865103	CMakeFiles/BonusQuestion.dir/Bonus_Question/scheduler.c.obj	60c3eeb06b0cc13f
+47	143	7979857663293041	BonusQuestion.exe	99036b0c001b3ff5

@@ -19,15 +19,16 @@ int find_max_lookahead_window (int* loads, int W, int nodes, int global_time) {
     int max = 0;
     int index = 0;
 
-    for(int i = 0; i < nodes; i++) {
-        int nodeMax = 0;
-        for(int j = 0; j < W; j++) {
-            nodeMax += *((loads + (i*global_time)) + j);
+    for(int t = 0; t < global_time; t++) {
+        int windowSum = 0;
+
+        for (int i = 0; i < nodes; i++) {
+            for (int j = 0; j < W; j++) {
+                windowSum += *((loads + (i * global_time)) + (t + j));
+            }
         }
 
-        printf("Node Max: %d\nMax: %d\n", nodeMax, max);
-
-        if(nodeMax > max) { max = nodeMax; index = i; };
+        if(windowSum > max) { max = windowSum; index = t; };
     }
 
     return index;
