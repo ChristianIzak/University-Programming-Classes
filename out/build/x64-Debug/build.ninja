@@ -140,6 +140,1362 @@ build RobotHomework.exe: C_EXECUTABLE_LINKER__RobotHomework_Debug CMakeFiles\Rob
   TARGET_IMPLIB = RobotHomework.lib
   TARGET_PDB = RobotHomework.pdb
 
+# =============================================================================
+# Object build statements for EXECUTABLE target array_demo
+
+
+#############################################
+# Order-only phony target for array_demo
+
+build cmake_object_order_depends_target_array_demo: phony || .
+
+build CMakeFiles\array_demo.dir\Class\ClassCodes\array.c.obj: C_COMPILER__array_demo_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\ClassCodes\array.c || cmake_object_order_depends_target_array_demo
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\array_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\array_demo.dir\Class\ClassCodes
+  TARGET_COMPILE_PDB = CMakeFiles\array_demo.dir\
+  TARGET_PDB = array_demo.pdb
+
+build CMakeFiles\array_demo.dir\Class\ClassCodes\utils.c.obj: C_COMPILER__array_demo_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\ClassCodes\utils.c || cmake_object_order_depends_target_array_demo
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\array_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\array_demo.dir\Class\ClassCodes
+  TARGET_COMPILE_PDB = CMakeFiles\array_demo.dir\
+  TARGET_PDB = array_demo.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target array_demo
+
+
+#############################################
+# Link the executable array_demo.exe
+
+build array_demo.exe: C_EXECUTABLE_LINKER__array_demo_Debug CMakeFiles\array_demo.dir\Class\ClassCodes\array.c.obj CMakeFiles\array_demo.dir\Class\ClassCodes\utils.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\array_demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\array_demo.dir\
+  TARGET_FILE = array_demo.exe
+  TARGET_IMPLIB = array_demo.lib
+  TARGET_PDB = array_demo.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target matrix_demo
+
+
+#############################################
+# Order-only phony target for matrix_demo
+
+build cmake_object_order_depends_target_matrix_demo: phony || .
+
+build CMakeFiles\matrix_demo.dir\Class\Matrix\main.c.obj: C_COMPILER__matrix_demo_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Matrix\main.c || cmake_object_order_depends_target_matrix_demo
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\matrix_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\matrix_demo.dir\Class\Matrix
+  TARGET_COMPILE_PDB = CMakeFiles\matrix_demo.dir\
+  TARGET_PDB = matrix_demo.pdb
+
+build CMakeFiles\matrix_demo.dir\Class\Matrix\matrix.c.obj: C_COMPILER__matrix_demo_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Matrix\matrix.c || cmake_object_order_depends_target_matrix_demo
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\matrix_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\matrix_demo.dir\Class\Matrix
+  TARGET_COMPILE_PDB = CMakeFiles\matrix_demo.dir\
+  TARGET_PDB = matrix_demo.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target matrix_demo
+
+
+#############################################
+# Link the executable matrix_demo.exe
+
+build matrix_demo.exe: C_EXECUTABLE_LINKER__matrix_demo_Debug CMakeFiles\matrix_demo.dir\Class\Matrix\main.c.obj CMakeFiles\matrix_demo.dir\Class\Matrix\matrix.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\matrix_demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\matrix_demo.dir\
+  TARGET_FILE = matrix_demo.exe
+  TARGET_IMPLIB = matrix_demo.lib
+  TARGET_PDB = matrix_demo.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target max_demo
+
+
+#############################################
+# Order-only phony target for max_demo
+
+build cmake_object_order_depends_target_max_demo: phony || .
+
+build CMakeFiles\max_demo.dir\Class\Max\main.c.obj: C_COMPILER__max_demo_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Max\main.c || cmake_object_order_depends_target_max_demo
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\max_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\max_demo.dir\Class\Max
+  TARGET_COMPILE_PDB = CMakeFiles\max_demo.dir\
+  TARGET_PDB = max_demo.pdb
+
+build CMakeFiles\max_demo.dir\Class\Max\max.c.obj: C_COMPILER__max_demo_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Max\max.c || cmake_object_order_depends_target_max_demo
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\max_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\max_demo.dir\Class\Max
+  TARGET_COMPILE_PDB = CMakeFiles\max_demo.dir\
+  TARGET_PDB = max_demo.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target max_demo
+
+
+#############################################
+# Link the executable max_demo.exe
+
+build max_demo.exe: C_EXECUTABLE_LINKER__max_demo_Debug CMakeFiles\max_demo.dir\Class\Max\main.c.obj CMakeFiles\max_demo.dir\Class\Max\max.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\max_demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\max_demo.dir\
+  TARGET_FILE = max_demo.exe
+  TARGET_IMPLIB = max_demo.lib
+  TARGET_PDB = max_demo.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target calloc_example
+
+
+#############################################
+# Order-only phony target for calloc_example
+
+build cmake_object_order_depends_target_calloc_example: phony || .
+
+build CMakeFiles\calloc_example.dir\Class\Memory_Management\callocExample.c.obj: C_COMPILER__calloc_example_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Memory$ Management\callocExample.c || cmake_object_order_depends_target_calloc_example
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\calloc_example.dir
+  OBJECT_FILE_DIR = CMakeFiles\calloc_example.dir\Class\Memory_Management
+  TARGET_COMPILE_PDB = CMakeFiles\calloc_example.dir\
+  TARGET_PDB = calloc_example.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target calloc_example
+
+
+#############################################
+# Link the executable calloc_example.exe
+
+build calloc_example.exe: C_EXECUTABLE_LINKER__calloc_example_Debug CMakeFiles\calloc_example.dir\Class\Memory_Management\callocExample.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\calloc_example.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\calloc_example.dir\
+  TARGET_FILE = calloc_example.exe
+  TARGET_IMPLIB = calloc_example.lib
+  TARGET_PDB = calloc_example.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target malloc_example
+
+
+#############################################
+# Order-only phony target for malloc_example
+
+build cmake_object_order_depends_target_malloc_example: phony || .
+
+build CMakeFiles\malloc_example.dir\Class\Memory_Management\mallocExample.c.obj: C_COMPILER__malloc_example_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Memory$ Management\mallocExample.c || cmake_object_order_depends_target_malloc_example
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\malloc_example.dir
+  OBJECT_FILE_DIR = CMakeFiles\malloc_example.dir\Class\Memory_Management
+  TARGET_COMPILE_PDB = CMakeFiles\malloc_example.dir\
+  TARGET_PDB = malloc_example.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target malloc_example
+
+
+#############################################
+# Link the executable malloc_example.exe
+
+build malloc_example.exe: C_EXECUTABLE_LINKER__malloc_example_Debug CMakeFiles\malloc_example.dir\Class\Memory_Management\mallocExample.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\malloc_example.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\malloc_example.dir\
+  TARGET_FILE = malloc_example.exe
+  TARGET_IMPLIB = malloc_example.lib
+  TARGET_PDB = malloc_example.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target memory_free
+
+
+#############################################
+# Order-only phony target for memory_free
+
+build cmake_object_order_depends_target_memory_free: phony || .
+
+build CMakeFiles\memory_free.dir\Class\Memory_Management\memoryFree.c.obj: C_COMPILER__memory_free_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Memory$ Management\memoryFree.c || cmake_object_order_depends_target_memory_free
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\memory_free.dir
+  OBJECT_FILE_DIR = CMakeFiles\memory_free.dir\Class\Memory_Management
+  TARGET_COMPILE_PDB = CMakeFiles\memory_free.dir\
+  TARGET_PDB = memory_free.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target memory_free
+
+
+#############################################
+# Link the executable memory_free.exe
+
+build memory_free.exe: C_EXECUTABLE_LINKER__memory_free_Debug CMakeFiles\memory_free.dir\Class\Memory_Management\memoryFree.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\memory_free.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\memory_free.dir\
+  TARGET_FILE = memory_free.exe
+  TARGET_IMPLIB = memory_free.lib
+  TARGET_PDB = memory_free.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target pointer_allocation
+
+
+#############################################
+# Order-only phony target for pointer_allocation
+
+build cmake_object_order_depends_target_pointer_allocation: phony || .
+
+build CMakeFiles\pointer_allocation.dir\Class\Memory_Management\pointerAllocation.c.obj: C_COMPILER__pointer_allocation_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Memory$ Management\pointerAllocation.c || cmake_object_order_depends_target_pointer_allocation
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\pointer_allocation.dir
+  OBJECT_FILE_DIR = CMakeFiles\pointer_allocation.dir\Class\Memory_Management
+  TARGET_COMPILE_PDB = CMakeFiles\pointer_allocation.dir\
+  TARGET_PDB = pointer_allocation.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target pointer_allocation
+
+
+#############################################
+# Link the executable pointer_allocation.exe
+
+build pointer_allocation.exe: C_EXECUTABLE_LINKER__pointer_allocation_Debug CMakeFiles\pointer_allocation.dir\Class\Memory_Management\pointerAllocation.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\pointer_allocation.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\pointer_allocation.dir\
+  TARGET_FILE = pointer_allocation.exe
+  TARGET_IMPLIB = pointer_allocation.lib
+  TARGET_PDB = pointer_allocation.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target practice_demo
+
+
+#############################################
+# Order-only phony target for practice_demo
+
+build cmake_object_order_depends_target_practice_demo: phony || .
+
+build CMakeFiles\practice_demo.dir\Class\Memory_Management\practice.c.obj: C_COMPILER__practice_demo_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Memory$ Management\practice.c || cmake_object_order_depends_target_practice_demo
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\practice_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\practice_demo.dir\Class\Memory_Management
+  TARGET_COMPILE_PDB = CMakeFiles\practice_demo.dir\
+  TARGET_PDB = practice_demo.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target practice_demo
+
+
+#############################################
+# Link the executable practice_demo.exe
+
+build practice_demo.exe: C_EXECUTABLE_LINKER__practice_demo_Debug CMakeFiles\practice_demo.dir\Class\Memory_Management\practice.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\practice_demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\practice_demo.dir\
+  TARGET_FILE = practice_demo.exe
+  TARGET_IMPLIB = practice_demo.lib
+  TARGET_PDB = practice_demo.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target realloc_example
+
+
+#############################################
+# Order-only phony target for realloc_example
+
+build cmake_object_order_depends_target_realloc_example: phony || .
+
+build CMakeFiles\realloc_example.dir\Class\Memory_Management\reallocExample.c.obj: C_COMPILER__realloc_example_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Memory$ Management\reallocExample.c || cmake_object_order_depends_target_realloc_example
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\realloc_example.dir
+  OBJECT_FILE_DIR = CMakeFiles\realloc_example.dir\Class\Memory_Management
+  TARGET_COMPILE_PDB = CMakeFiles\realloc_example.dir\
+  TARGET_PDB = realloc_example.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target realloc_example
+
+
+#############################################
+# Link the executable realloc_example.exe
+
+build realloc_example.exe: C_EXECUTABLE_LINKER__realloc_example_Debug CMakeFiles\realloc_example.dir\Class\Memory_Management\reallocExample.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\realloc_example.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\realloc_example.dir\
+  TARGET_FILE = realloc_example.exe
+  TARGET_IMPLIB = realloc_example.lib
+  TARGET_PDB = realloc_example.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target worked_example1
+
+
+#############################################
+# Order-only phony target for worked_example1
+
+build cmake_object_order_depends_target_worked_example1: phony || .
+
+build CMakeFiles\worked_example1.dir\Class\Memory_Management\workedExample1.c.obj: C_COMPILER__worked_example1_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Memory$ Management\workedExample1.c || cmake_object_order_depends_target_worked_example1
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\worked_example1.dir
+  OBJECT_FILE_DIR = CMakeFiles\worked_example1.dir\Class\Memory_Management
+  TARGET_COMPILE_PDB = CMakeFiles\worked_example1.dir\
+  TARGET_PDB = worked_example1.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target worked_example1
+
+
+#############################################
+# Link the executable worked_example1.exe
+
+build worked_example1.exe: C_EXECUTABLE_LINKER__worked_example1_Debug CMakeFiles\worked_example1.dir\Class\Memory_Management\workedExample1.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\worked_example1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\worked_example1.dir\
+  TARGET_FILE = worked_example1.exe
+  TARGET_IMPLIB = worked_example1.lib
+  TARGET_PDB = worked_example1.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target snakes_and_ladders
+
+
+#############################################
+# Order-only phony target for snakes_and_ladders
+
+build cmake_object_order_depends_target_snakes_and_ladders: phony || .
+
+build CMakeFiles\snakes_and_ladders.dir\Class\Practice_Problems\snakesandladders.c.obj: C_COMPILER__snakes_and_ladders_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Practice$ Problems\snakesandladders.c || cmake_object_order_depends_target_snakes_and_ladders
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\snakes_and_ladders.dir
+  OBJECT_FILE_DIR = CMakeFiles\snakes_and_ladders.dir\Class\Practice_Problems
+  TARGET_COMPILE_PDB = CMakeFiles\snakes_and_ladders.dir\
+  TARGET_PDB = snakes_and_ladders.pdb
+
+build CMakeFiles\snakes_and_ladders.dir\Class\Practice_Problems\utils.c.obj: C_COMPILER__snakes_and_ladders_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Practice$ Problems\utils.c || cmake_object_order_depends_target_snakes_and_ladders
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\snakes_and_ladders.dir
+  OBJECT_FILE_DIR = CMakeFiles\snakes_and_ladders.dir\Class\Practice_Problems
+  TARGET_COMPILE_PDB = CMakeFiles\snakes_and_ladders.dir\
+  TARGET_PDB = snakes_and_ladders.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target snakes_and_ladders
+
+
+#############################################
+# Link the executable snakes_and_ladders.exe
+
+build snakes_and_ladders.exe: C_EXECUTABLE_LINKER__snakes_and_ladders_Debug CMakeFiles\snakes_and_ladders.dir\Class\Practice_Problems\snakesandladders.c.obj CMakeFiles\snakes_and_ladders.dir\Class\Practice_Problems\utils.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\snakes_and_ladders.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\snakes_and_ladders.dir\
+  TARGET_FILE = snakes_and_ladders.exe
+  TARGET_IMPLIB = snakes_and_ladders.lib
+  TARGET_PDB = snakes_and_ladders.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target dynamic_arrays_structures
+
+
+#############################################
+# Order-only phony target for dynamic_arrays_structures
+
+build cmake_object_order_depends_target_dynamic_arrays_structures: phony || .
+
+build CMakeFiles\dynamic_arrays_structures.dir\Class\Struct\dynamicArraysOfStructures.c.obj: C_COMPILER__dynamic_arrays_structures_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Struct\dynamicArraysOfStructures.c || cmake_object_order_depends_target_dynamic_arrays_structures
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\dynamic_arrays_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\dynamic_arrays_structures.dir\Class\Struct
+  TARGET_COMPILE_PDB = CMakeFiles\dynamic_arrays_structures.dir\
+  TARGET_PDB = dynamic_arrays_structures.pdb
+
+build CMakeFiles\dynamic_arrays_structures.dir\Class\Struct\structures.c.obj: C_COMPILER__dynamic_arrays_structures_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Struct\structures.c || cmake_object_order_depends_target_dynamic_arrays_structures
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\dynamic_arrays_structures.dir
+  OBJECT_FILE_DIR = CMakeFiles\dynamic_arrays_structures.dir\Class\Struct
+  TARGET_COMPILE_PDB = CMakeFiles\dynamic_arrays_structures.dir\
+  TARGET_PDB = dynamic_arrays_structures.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dynamic_arrays_structures
+
+
+#############################################
+# Link the executable dynamic_arrays_structures.exe
+
+build dynamic_arrays_structures.exe: C_EXECUTABLE_LINKER__dynamic_arrays_structures_Debug CMakeFiles\dynamic_arrays_structures.dir\Class\Struct\dynamicArraysOfStructures.c.obj CMakeFiles\dynamic_arrays_structures.dir\Class\Struct\structures.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\dynamic_arrays_structures.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\dynamic_arrays_structures.dir\
+  TARGET_FILE = dynamic_arrays_structures.exe
+  TARGET_IMPLIB = dynamic_arrays_structures.lib
+  TARGET_PDB = dynamic_arrays_structures.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target struct_main
+
+
+#############################################
+# Order-only phony target for struct_main
+
+build cmake_object_order_depends_target_struct_main: phony || .
+
+build CMakeFiles\struct_main.dir\Class\Struct\main.c.obj: C_COMPILER__struct_main_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Struct\main.c || cmake_object_order_depends_target_struct_main
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\struct_main.dir
+  OBJECT_FILE_DIR = CMakeFiles\struct_main.dir\Class\Struct
+  TARGET_COMPILE_PDB = CMakeFiles\struct_main.dir\
+  TARGET_PDB = struct_main.pdb
+
+build CMakeFiles\struct_main.dir\Class\Struct\structures.c.obj: C_COMPILER__struct_main_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Struct\structures.c || cmake_object_order_depends_target_struct_main
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\struct_main.dir
+  OBJECT_FILE_DIR = CMakeFiles\struct_main.dir\Class\Struct
+  TARGET_COMPILE_PDB = CMakeFiles\struct_main.dir\
+  TARGET_PDB = struct_main.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target struct_main
+
+
+#############################################
+# Link the executable struct_main.exe
+
+build struct_main.exe: C_EXECUTABLE_LINKER__struct_main_Debug CMakeFiles\struct_main.dir\Class\Struct\main.c.obj CMakeFiles\struct_main.dir\Class\Struct\structures.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\struct_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\struct_main.dir\
+  TARGET_FILE = struct_main.exe
+  TARGET_IMPLIB = struct_main.lib
+  TARGET_PDB = struct_main.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target struct_example
+
+
+#############################################
+# Order-only phony target for struct_example
+
+build cmake_object_order_depends_target_struct_example: phony || .
+
+build CMakeFiles\struct_example.dir\Class\Struct\structExample.c.obj: C_COMPILER__struct_example_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Struct\structExample.c || cmake_object_order_depends_target_struct_example
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\struct_example.dir
+  OBJECT_FILE_DIR = CMakeFiles\struct_example.dir\Class\Struct
+  TARGET_COMPILE_PDB = CMakeFiles\struct_example.dir\
+  TARGET_PDB = struct_example.pdb
+
+build CMakeFiles\struct_example.dir\Class\Struct\structures.c.obj: C_COMPILER__struct_example_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\Struct\structures.c || cmake_object_order_depends_target_struct_example
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\struct_example.dir
+  OBJECT_FILE_DIR = CMakeFiles\struct_example.dir\Class\Struct
+  TARGET_COMPILE_PDB = CMakeFiles\struct_example.dir\
+  TARGET_PDB = struct_example.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target struct_example
+
+
+#############################################
+# Link the executable struct_example.exe
+
+build struct_example.exe: C_EXECUTABLE_LINKER__struct_example_Debug CMakeFiles\struct_example.dir\Class\Struct\structExample.c.obj CMakeFiles\struct_example.dir\Class\Struct\structures.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\struct_example.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\struct_example.dir\
+  TARGET_FILE = struct_example.exe
+  TARGET_IMPLIB = struct_example.lib
+  TARGET_PDB = struct_example.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target movie_database_utils
+
+
+#############################################
+# Order-only phony target for movie_database_utils
+
+build cmake_object_order_depends_target_movie_database_utils: phony || .
+
+build CMakeFiles\movie_database_utils.dir\Class\TheMovieDatabase\utils.c.obj: C_COMPILER__movie_database_utils_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Class\TheMovieDatabase\utils.c || cmake_object_order_depends_target_movie_database_utils
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\movie_database_utils.dir
+  OBJECT_FILE_DIR = CMakeFiles\movie_database_utils.dir\Class\TheMovieDatabase
+  TARGET_COMPILE_PDB = CMakeFiles\movie_database_utils.dir\
+  TARGET_PDB = movie_database_utils.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target movie_database_utils
+
+
+#############################################
+# Link the executable movie_database_utils.exe
+
+build movie_database_utils.exe: C_EXECUTABLE_LINKER__movie_database_utils_Debug CMakeFiles\movie_database_utils.dir\Class\TheMovieDatabase\utils.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\movie_database_utils.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\movie_database_utils.dir\
+  TARGET_FILE = movie_database_utils.exe
+  TARGET_IMPLIB = movie_database_utils.lib
+  TARGET_PDB = movie_database_utils.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab1
+
+
+#############################################
+# Order-only phony target for lab1
+
+build cmake_object_order_depends_target_lab1: phony || .
+
+build CMakeFiles\lab1.dir\Labs\Lab_1\lab1.c.obj: C_COMPILER__lab1_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 1\lab1.c || cmake_object_order_depends_target_lab1
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab1.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab1.dir\Labs\Lab_1
+  TARGET_COMPILE_PDB = CMakeFiles\lab1.dir\
+  TARGET_PDB = lab1.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab1
+
+
+#############################################
+# Link the executable lab1.exe
+
+build lab1.exe: C_EXECUTABLE_LINKER__lab1_Debug CMakeFiles\lab1.dir\Labs\Lab_1\lab1.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab1.dir\
+  TARGET_FILE = lab1.exe
+  TARGET_IMPLIB = lab1.lib
+  TARGET_PDB = lab1.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab1_profile
+
+
+#############################################
+# Order-only phony target for lab1_profile
+
+build cmake_object_order_depends_target_lab1_profile: phony || .
+
+build CMakeFiles\lab1_profile.dir\Labs\Lab_1\lab1_profile.c.obj: C_COMPILER__lab1_profile_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 1\lab1_profile.c || cmake_object_order_depends_target_lab1_profile
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab1_profile.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab1_profile.dir\Labs\Lab_1
+  TARGET_COMPILE_PDB = CMakeFiles\lab1_profile.dir\
+  TARGET_PDB = lab1_profile.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab1_profile
+
+
+#############################################
+# Link the executable lab1_profile.exe
+
+build lab1_profile.exe: C_EXECUTABLE_LINKER__lab1_profile_Debug CMakeFiles\lab1_profile.dir\Labs\Lab_1\lab1_profile.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab1_profile.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab1_profile.dir\
+  TARGET_FILE = lab1_profile.exe
+  TARGET_IMPLIB = lab1_profile.lib
+  TARGET_PDB = lab1_profile.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab1_variables
+
+
+#############################################
+# Order-only phony target for lab1_variables
+
+build cmake_object_order_depends_target_lab1_variables: phony || .
+
+build CMakeFiles\lab1_variables.dir\Labs\Lab_1\lab1_variables.c.obj: C_COMPILER__lab1_variables_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 1\lab1_variables.c || cmake_object_order_depends_target_lab1_variables
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab1_variables.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab1_variables.dir\Labs\Lab_1
+  TARGET_COMPILE_PDB = CMakeFiles\lab1_variables.dir\
+  TARGET_PDB = lab1_variables.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab1_variables
+
+
+#############################################
+# Link the executable lab1_variables.exe
+
+build lab1_variables.exe: C_EXECUTABLE_LINKER__lab1_variables_Debug CMakeFiles\lab1_variables.dir\Labs\Lab_1\lab1_variables.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab1_variables.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab1_variables.dir\
+  TARGET_FILE = lab1_variables.exe
+  TARGET_IMPLIB = lab1_variables.lib
+  TARGET_PDB = lab1_variables.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab7_copy
+
+
+#############################################
+# Order-only phony target for lab7_copy
+
+build cmake_object_order_depends_target_lab7_copy: phony || .
+
+build CMakeFiles\lab7_copy.dir\Labs\Lab_7\copy.c.obj: C_COMPILER__lab7_copy_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 7\copy.c || cmake_object_order_depends_target_lab7_copy
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab7_copy.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab7_copy.dir\Labs\Lab_7
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_copy.dir\
+  TARGET_PDB = lab7_copy.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab7_copy
+
+
+#############################################
+# Link the executable lab7_copy.exe
+
+build lab7_copy.exe: C_EXECUTABLE_LINKER__lab7_copy_Debug CMakeFiles\lab7_copy.dir\Labs\Lab_7\copy.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab7_copy.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_copy.dir\
+  TARGET_FILE = lab7_copy.exe
+  TARGET_IMPLIB = lab7_copy.lib
+  TARGET_PDB = lab7_copy.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab7_memory
+
+
+#############################################
+# Order-only phony target for lab7_memory
+
+build cmake_object_order_depends_target_lab7_memory: phony || .
+
+build CMakeFiles\lab7_memory.dir\Labs\Lab_7\memory.c.obj: C_COMPILER__lab7_memory_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 7\memory.c || cmake_object_order_depends_target_lab7_memory
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab7_memory.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab7_memory.dir\Labs\Lab_7
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_memory.dir\
+  TARGET_PDB = lab7_memory.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab7_memory
+
+
+#############################################
+# Link the executable lab7_memory.exe
+
+build lab7_memory.exe: C_EXECUTABLE_LINKER__lab7_memory_Debug CMakeFiles\lab7_memory.dir\Labs\Lab_7\memory.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab7_memory.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_memory.dir\
+  TARGET_FILE = lab7_memory.exe
+  TARGET_IMPLIB = lab7_memory.lib
+  TARGET_PDB = lab7_memory.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab7_range
+
+
+#############################################
+# Order-only phony target for lab7_range
+
+build cmake_object_order_depends_target_lab7_range: phony || .
+
+build CMakeFiles\lab7_range.dir\Labs\Lab_7\range.c.obj: C_COMPILER__lab7_range_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 7\range.c || cmake_object_order_depends_target_lab7_range
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab7_range.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab7_range.dir\Labs\Lab_7
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_range.dir\
+  TARGET_PDB = lab7_range.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab7_range
+
+
+#############################################
+# Link the executable lab7_range.exe
+
+build lab7_range.exe: C_EXECUTABLE_LINKER__lab7_range_Debug CMakeFiles\lab7_range.dir\Labs\Lab_7\range.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab7_range.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_range.dir\
+  TARGET_FILE = lab7_range.exe
+  TARGET_IMPLIB = lab7_range.lib
+  TARGET_PDB = lab7_range.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab7_riddler
+
+
+#############################################
+# Order-only phony target for lab7_riddler
+
+build cmake_object_order_depends_target_lab7_riddler: phony || .
+
+build CMakeFiles\lab7_riddler.dir\Labs\Lab_7\riddler.c.obj: C_COMPILER__lab7_riddler_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 7\riddler.c || cmake_object_order_depends_target_lab7_riddler
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab7_riddler.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab7_riddler.dir\Labs\Lab_7
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_riddler.dir\
+  TARGET_PDB = lab7_riddler.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab7_riddler
+
+
+#############################################
+# Link the executable lab7_riddler.exe
+
+build lab7_riddler.exe: C_EXECUTABLE_LINKER__lab7_riddler_Debug CMakeFiles\lab7_riddler.dir\Labs\Lab_7\riddler.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab7_riddler.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab7_riddler.dir\
+  TARGET_FILE = lab7_riddler.exe
+  TARGET_IMPLIB = lab7_riddler.lib
+  TARGET_PDB = lab7_riddler.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab8_dictionary
+
+
+#############################################
+# Order-only phony target for lab8_dictionary
+
+build cmake_object_order_depends_target_lab8_dictionary: phony || .
+
+build CMakeFiles\lab8_dictionary.dir\Labs\Lab_8\dictionary.c.obj: C_COMPILER__lab8_dictionary_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 8\dictionary.c || cmake_object_order_depends_target_lab8_dictionary
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab8_dictionary.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab8_dictionary.dir\Labs\Lab_8
+  TARGET_COMPILE_PDB = CMakeFiles\lab8_dictionary.dir\
+  TARGET_PDB = lab8_dictionary.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab8_dictionary
+
+
+#############################################
+# Link the executable lab8_dictionary.exe
+
+build lab8_dictionary.exe: C_EXECUTABLE_LINKER__lab8_dictionary_Debug CMakeFiles\lab8_dictionary.dir\Labs\Lab_8\dictionary.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab8_dictionary.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab8_dictionary.dir\
+  TARGET_FILE = lab8_dictionary.exe
+  TARGET_IMPLIB = lab8_dictionary.lib
+  TARGET_PDB = lab8_dictionary.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab8_matrix_mult
+
+
+#############################################
+# Order-only phony target for lab8_matrix_mult
+
+build cmake_object_order_depends_target_lab8_matrix_mult: phony || .
+
+build CMakeFiles\lab8_matrix_mult.dir\Labs\Lab_8\matrix_mult.c.obj: C_COMPILER__lab8_matrix_mult_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 8\matrix_mult.c || cmake_object_order_depends_target_lab8_matrix_mult
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab8_matrix_mult.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab8_matrix_mult.dir\Labs\Lab_8
+  TARGET_COMPILE_PDB = CMakeFiles\lab8_matrix_mult.dir\
+  TARGET_PDB = lab8_matrix_mult.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab8_matrix_mult
+
+
+#############################################
+# Link the executable lab8_matrix_mult.exe
+
+build lab8_matrix_mult.exe: C_EXECUTABLE_LINKER__lab8_matrix_mult_Debug CMakeFiles\lab8_matrix_mult.dir\Labs\Lab_8\matrix_mult.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab8_matrix_mult.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab8_matrix_mult.dir\
+  TARGET_FILE = lab8_matrix_mult.exe
+  TARGET_IMPLIB = lab8_matrix_mult.lib
+  TARGET_PDB = lab8_matrix_mult.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab8_tensor
+
+
+#############################################
+# Order-only phony target for lab8_tensor
+
+build cmake_object_order_depends_target_lab8_tensor: phony || .
+
+build CMakeFiles\lab8_tensor.dir\Labs\Lab_8\tensor.c.obj: C_COMPILER__lab8_tensor_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 8\tensor.c || cmake_object_order_depends_target_lab8_tensor
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\lab8_tensor.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab8_tensor.dir\Labs\Lab_8
+  TARGET_COMPILE_PDB = CMakeFiles\lab8_tensor.dir\
+  TARGET_PDB = lab8_tensor.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab8_tensor
+
+
+#############################################
+# Link the executable lab8_tensor.exe
+
+build lab8_tensor.exe: C_EXECUTABLE_LINKER__lab8_tensor_Debug CMakeFiles\lab8_tensor.dir\Labs\Lab_8\tensor.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\lab8_tensor.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\lab8_tensor.dir\
+  TARGET_FILE = lab8_tensor.exe
+  TARGET_IMPLIB = lab8_tensor.lib
+  TARGET_PDB = lab8_tensor.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab9Cipher
+
+
+#############################################
+# Order-only phony target for Lab9Cipher
+
+build cmake_object_order_depends_target_Lab9Cipher: phony || .
+
+build CMakeFiles\Lab9Cipher.dir\Labs\Lab_9\cipher.c.obj: C_COMPILER__Lab9Cipher_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 9\cipher.c || cmake_object_order_depends_target_Lab9Cipher
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab9Cipher.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab9Cipher.dir\Labs\Lab_9
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Cipher.dir\
+  TARGET_PDB = Lab9Cipher.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab9Cipher
+
+
+#############################################
+# Link the executable Lab9Cipher.exe
+
+build Lab9Cipher.exe: C_EXECUTABLE_LINKER__Lab9Cipher_Debug CMakeFiles\Lab9Cipher.dir\Labs\Lab_9\cipher.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab9Cipher.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Cipher.dir\
+  TARGET_FILE = Lab9Cipher.exe
+  TARGET_IMPLIB = Lab9Cipher.lib
+  TARGET_PDB = Lab9Cipher.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab9Clues
+
+
+#############################################
+# Order-only phony target for Lab9Clues
+
+build cmake_object_order_depends_target_Lab9Clues: phony || .
+
+build CMakeFiles\Lab9Clues.dir\Labs\Lab_9\clues.c.obj: C_COMPILER__Lab9Clues_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 9\clues.c || cmake_object_order_depends_target_Lab9Clues
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab9Clues.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab9Clues.dir\Labs\Lab_9
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Clues.dir\
+  TARGET_PDB = Lab9Clues.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab9Clues
+
+
+#############################################
+# Link the executable Lab9Clues.exe
+
+build Lab9Clues.exe: C_EXECUTABLE_LINKER__Lab9Clues_Debug CMakeFiles\Lab9Clues.dir\Labs\Lab_9\clues.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab9Clues.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Clues.dir\
+  TARGET_FILE = Lab9Clues.exe
+  TARGET_IMPLIB = Lab9Clues.lib
+  TARGET_PDB = Lab9Clues.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab9Hoard
+
+
+#############################################
+# Order-only phony target for Lab9Hoard
+
+build cmake_object_order_depends_target_Lab9Hoard: phony || .
+
+build CMakeFiles\Lab9Hoard.dir\Labs\Lab_9\hoard.c.obj: C_COMPILER__Lab9Hoard_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 9\hoard.c || cmake_object_order_depends_target_Lab9Hoard
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab9Hoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab9Hoard.dir\Labs\Lab_9
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Hoard.dir\
+  TARGET_PDB = Lab9Hoard.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab9Hoard
+
+
+#############################################
+# Link the executable Lab9Hoard.exe
+
+build Lab9Hoard.exe: C_EXECUTABLE_LINKER__Lab9Hoard_Debug CMakeFiles\Lab9Hoard.dir\Labs\Lab_9\hoard.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab9Hoard.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Hoard.dir\
+  TARGET_FILE = Lab9Hoard.exe
+  TARGET_IMPLIB = Lab9Hoard.lib
+  TARGET_PDB = Lab9Hoard.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab9Secrets
+
+
+#############################################
+# Order-only phony target for Lab9Secrets
+
+build cmake_object_order_depends_target_Lab9Secrets: phony || .
+
+build CMakeFiles\Lab9Secrets.dir\Labs\Lab_9\secrets.c.obj: C_COMPILER__Lab9Secrets_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 9\secrets.c || cmake_object_order_depends_target_Lab9Secrets
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab9Secrets.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab9Secrets.dir\Labs\Lab_9
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Secrets.dir\
+  TARGET_PDB = Lab9Secrets.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab9Secrets
+
+
+#############################################
+# Link the executable Lab9Secrets.exe
+
+build Lab9Secrets.exe: C_EXECUTABLE_LINKER__Lab9Secrets_Debug CMakeFiles\Lab9Secrets.dir\Labs\Lab_9\secrets.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab9Secrets.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab9Secrets.dir\
+  TARGET_FILE = Lab9Secrets.exe
+  TARGET_IMPLIB = Lab9Secrets.lib
+  TARGET_PDB = Lab9Secrets.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab10Band
+
+
+#############################################
+# Order-only phony target for Lab10Band
+
+build cmake_object_order_depends_target_Lab10Band: phony || .
+
+build CMakeFiles\Lab10Band.dir\Labs\Lab_10\band.c.obj: C_COMPILER__Lab10Band_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 10\band.c || cmake_object_order_depends_target_Lab10Band
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab10Band.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab10Band.dir\Labs\Lab_10
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Band.dir\
+  TARGET_PDB = Lab10Band.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab10Band
+
+
+#############################################
+# Link the executable Lab10Band.exe
+
+build Lab10Band.exe: C_EXECUTABLE_LINKER__Lab10Band_Debug CMakeFiles\Lab10Band.dir\Labs\Lab_10\band.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab10Band.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Band.dir\
+  TARGET_FILE = Lab10Band.exe
+  TARGET_IMPLIB = Lab10Band.lib
+  TARGET_PDB = Lab10Band.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab10Dairy
+
+
+#############################################
+# Order-only phony target for Lab10Dairy
+
+build cmake_object_order_depends_target_Lab10Dairy: phony || .
+
+build CMakeFiles\Lab10Dairy.dir\Labs\Lab_10\dairy.c.obj: C_COMPILER__Lab10Dairy_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 10\dairy.c || cmake_object_order_depends_target_Lab10Dairy
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab10Dairy.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab10Dairy.dir\Labs\Lab_10
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Dairy.dir\
+  TARGET_PDB = Lab10Dairy.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab10Dairy
+
+
+#############################################
+# Link the executable Lab10Dairy.exe
+
+build Lab10Dairy.exe: C_EXECUTABLE_LINKER__Lab10Dairy_Debug CMakeFiles\Lab10Dairy.dir\Labs\Lab_10\dairy.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab10Dairy.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Dairy.dir\
+  TARGET_FILE = Lab10Dairy.exe
+  TARGET_IMPLIB = Lab10Dairy.lib
+  TARGET_PDB = Lab10Dairy.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab10Roster
+
+
+#############################################
+# Order-only phony target for Lab10Roster
+
+build cmake_object_order_depends_target_Lab10Roster: phony || .
+
+build CMakeFiles\Lab10Roster.dir\Labs\Lab_10\roster.c.obj: C_COMPILER__Lab10Roster_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 10\roster.c || cmake_object_order_depends_target_Lab10Roster
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab10Roster.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab10Roster.dir\Labs\Lab_10
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Roster.dir\
+  TARGET_PDB = Lab10Roster.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab10Roster
+
+
+#############################################
+# Link the executable Lab10Roster.exe
+
+build Lab10Roster.exe: C_EXECUTABLE_LINKER__Lab10Roster_Debug CMakeFiles\Lab10Roster.dir\Labs\Lab_10\roster.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab10Roster.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Roster.dir\
+  TARGET_FILE = Lab10Roster.exe
+  TARGET_IMPLIB = Lab10Roster.lib
+  TARGET_PDB = Lab10Roster.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab10Schedule
+
+
+#############################################
+# Order-only phony target for Lab10Schedule
+
+build cmake_object_order_depends_target_Lab10Schedule: phony || .
+
+build CMakeFiles\Lab10Schedule.dir\Labs\Lab_10\schedule.c.obj: C_COMPILER__Lab10Schedule_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 10\schedule.c || cmake_object_order_depends_target_Lab10Schedule
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Lab10Schedule.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lab10Schedule.dir\Labs\Lab_10
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Schedule.dir\
+  TARGET_PDB = Lab10Schedule.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab10Schedule
+
+
+#############################################
+# Link the executable Lab10Schedule.exe
+
+build Lab10Schedule.exe: C_EXECUTABLE_LINKER__Lab10Schedule_Debug CMakeFiles\Lab10Schedule.dir\Labs\Lab_10\schedule.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Lab10Schedule.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Lab10Schedule.dir\
+  TARGET_FILE = Lab10Schedule.exe
+  TARGET_IMPLIB = Lab10Schedule.lib
+  TARGET_PDB = Lab10Schedule.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Hogwarts
+
+
+#############################################
+# Order-only phony target for Hogwarts
+
+build cmake_object_order_depends_target_Hogwarts: phony || .
+
+build CMakeFiles\Hogwarts.dir\Labs\Lab_11\main.c.obj: C_COMPILER__Hogwarts_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 11\main.c || cmake_object_order_depends_target_Hogwarts
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Hogwarts.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hogwarts.dir\Labs\Lab_11
+  TARGET_COMPILE_PDB = CMakeFiles\Hogwarts.dir\
+  TARGET_PDB = Hogwarts.pdb
+
+build CMakeFiles\Hogwarts.dir\Labs\Lab_11\map.c.obj: C_COMPILER__Hogwarts_unscanned_Debug C$:\Users\cizak\Desktop\CSE220\Labs\Lab$ 11\map.c || cmake_object_order_depends_target_Hogwarts
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\Hogwarts.dir
+  OBJECT_FILE_DIR = CMakeFiles\Hogwarts.dir\Labs\Lab_11
+  TARGET_COMPILE_PDB = CMakeFiles\Hogwarts.dir\
+  TARGET_PDB = Hogwarts.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Hogwarts
+
+
+#############################################
+# Link the executable Hogwarts.exe
+
+build Hogwarts.exe: C_EXECUTABLE_LINKER__Hogwarts_Debug CMakeFiles\Hogwarts.dir\Labs\Lab_11\main.c.obj CMakeFiles\Hogwarts.dir\Labs\Lab_11\map.c.obj
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\Hogwarts.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\Hogwarts.dir\
+  TARGET_FILE = Hogwarts.exe
+  TARGET_IMPLIB = Hogwarts.lib
+  TARGET_PDB = Hogwarts.pdb
+
 
 #############################################
 # Utility command for edit_cache
@@ -168,7 +1524,75 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build BonusQuestion: phony BonusQuestion.exe
 
+build Hogwarts: phony Hogwarts.exe
+
+build Lab10Band: phony Lab10Band.exe
+
+build Lab10Dairy: phony Lab10Dairy.exe
+
+build Lab10Roster: phony Lab10Roster.exe
+
+build Lab10Schedule: phony Lab10Schedule.exe
+
+build Lab9Cipher: phony Lab9Cipher.exe
+
+build Lab9Clues: phony Lab9Clues.exe
+
+build Lab9Hoard: phony Lab9Hoard.exe
+
+build Lab9Secrets: phony Lab9Secrets.exe
+
 build RobotHomework: phony RobotHomework.exe
+
+build array_demo: phony array_demo.exe
+
+build calloc_example: phony calloc_example.exe
+
+build dynamic_arrays_structures: phony dynamic_arrays_structures.exe
+
+build lab1: phony lab1.exe
+
+build lab1_profile: phony lab1_profile.exe
+
+build lab1_variables: phony lab1_variables.exe
+
+build lab7_copy: phony lab7_copy.exe
+
+build lab7_memory: phony lab7_memory.exe
+
+build lab7_range: phony lab7_range.exe
+
+build lab7_riddler: phony lab7_riddler.exe
+
+build lab8_dictionary: phony lab8_dictionary.exe
+
+build lab8_matrix_mult: phony lab8_matrix_mult.exe
+
+build lab8_tensor: phony lab8_tensor.exe
+
+build malloc_example: phony malloc_example.exe
+
+build matrix_demo: phony matrix_demo.exe
+
+build max_demo: phony max_demo.exe
+
+build memory_free: phony memory_free.exe
+
+build movie_database_utils: phony movie_database_utils.exe
+
+build pointer_allocation: phony pointer_allocation.exe
+
+build practice_demo: phony practice_demo.exe
+
+build realloc_example: phony realloc_example.exe
+
+build snakes_and_ladders: phony snakes_and_ladders.exe
+
+build struct_example: phony struct_example.exe
+
+build struct_main: phony struct_main.exe
+
+build worked_example1: phony worked_example1.exe
 
 # =============================================================================
 # Folder targets.
@@ -178,7 +1602,7 @@ build RobotHomework: phony RobotHomework.exe
 #############################################
 # Folder: C:/Users/cizak/Desktop/CSE220/out/build/x64-Debug
 
-build all: phony BonusQuestion.exe RobotHomework.exe
+build all: phony BonusQuestion.exe RobotHomework.exe array_demo.exe matrix_demo.exe max_demo.exe calloc_example.exe malloc_example.exe memory_free.exe pointer_allocation.exe practice_demo.exe realloc_example.exe worked_example1.exe snakes_and_ladders.exe dynamic_arrays_structures.exe struct_main.exe struct_example.exe movie_database_utils.exe lab1.exe lab1_profile.exe lab1_variables.exe lab7_copy.exe lab7_memory.exe lab7_range.exe lab7_riddler.exe lab8_dictionary.exe lab8_matrix_mult.exe lab8_tensor.exe Lab9Cipher.exe Lab9Clues.exe Lab9Hoard.exe Lab9Secrets.exe Lab10Band.exe Lab10Dairy.exe Lab10Roster.exe Lab10Schedule.exe Hogwarts.exe
 
 # =============================================================================
 # Built-in targets

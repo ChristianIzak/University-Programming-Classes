@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "scheduler.h"
+#include "scheduler/scheduler.h"
 
 int main () {
     int W = 2;

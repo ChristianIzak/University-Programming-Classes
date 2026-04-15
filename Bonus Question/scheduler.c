@@ -10,10 +10,7 @@ int find_max_lookahead_window (int* loads, int W, int nodes, int global_time) {
             if((*((loads + (global_time*i)) + j) % (i+1)) != 0) {
                 *((loads + (global_time*i)) + j) = 0;
             }
-
-            printf("%d ", *((loads + (global_time*i)) + j));
-        }  
-        printf("\n");
+        }
     }
 
     int max = 0;
@@ -27,7 +24,6 @@ int find_max_lookahead_window (int* loads, int W, int nodes, int global_time) {
                 windowSum += *((loads + (i * global_time)) + (t + j));
             }
         }
-
         if(windowSum > max) { max = windowSum; index = t; };
     }
 

@@ -54,6 +54,618 @@ rule C_EXECUTABLE_LINKER__RobotHomework_Debug
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__array_demo_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__array_demo_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__matrix_demo_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__matrix_demo_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__max_demo_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__max_demo_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__calloc_example_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__calloc_example_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__malloc_example_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__malloc_example_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__memory_free_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__memory_free_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__pointer_allocation_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__pointer_allocation_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__practice_demo_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__practice_demo_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__realloc_example_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__realloc_example_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__worked_example1_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__worked_example1_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__snakes_and_ladders_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__snakes_and_ladders_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__dynamic_arrays_structures_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__dynamic_arrays_structures_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__struct_main_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__struct_main_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__struct_example_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__struct_example_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__movie_database_utils_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__movie_database_utils_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab1_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab1_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab1_profile_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab1_profile_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab1_variables_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab1_variables_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab7_copy_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab7_copy_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab7_memory_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab7_memory_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab7_range_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab7_range_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab7_riddler_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab7_riddler_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab8_dictionary_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab8_dictionary_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab8_matrix_mult_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab8_matrix_mult_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lab8_tensor_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__lab8_tensor_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab9Cipher_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab9Cipher_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab9Clues_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab9Clues_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab9Hoard_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab9Hoard_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab9Secrets_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab9Secrets_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab10Band_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab10Band_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab10Dairy_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab10Dairy_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab10Roster_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab10Roster_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Lab10Schedule_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Lab10Schedule_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__Hogwarts_unscanned_Debug
+  deps = msvc
+  command = ${LAUNCHER}${CODE_CHECK}C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\cl.exe  /nologo $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__Hogwarts_Debug
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1950 --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~1\MICROS~1\18\COMMUN~1\VC\Tools\MSVC\1450~1.357\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for running custom commands.
 
 rule CUSTOM_COMMAND
