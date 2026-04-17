@@ -1,0 +1,376 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CSE220",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BonusQuestion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BonusQuestion-Debug-c3f1bdb4367aa03735bd.json",
+					"name" : "BonusQuestion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Hogwarts::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Hogwarts-Debug-693735c706a1e9aceffd.json",
+					"name" : "Hogwarts",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab10Band::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab10Band-Debug-78ac9948993b140061a5.json",
+					"name" : "Lab10Band",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab10Dairy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab10Dairy-Debug-c4e8b3bdba6440077697.json",
+					"name" : "Lab10Dairy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab10Roster::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab10Roster-Debug-fc70b066775fb6c9144f.json",
+					"name" : "Lab10Roster",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab10Schedule::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab10Schedule-Debug-4ce96acd3696860cb5a1.json",
+					"name" : "Lab10Schedule",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab9Cipher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab9Cipher-Debug-338958992b9fff6e6f67.json",
+					"name" : "Lab9Cipher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab9Clues::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab9Clues-Debug-ea5ac2cfabd3b01808da.json",
+					"name" : "Lab9Clues",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab9Hoard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab9Hoard-Debug-22dedb857501d424ef60.json",
+					"name" : "Lab9Hoard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab9Secrets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab9Secrets-Debug-f3ba871c2bffab90c6f9.json",
+					"name" : "Lab9Secrets",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RobotHomework::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RobotHomework-Debug-6ddd8f0871d94a669022.json",
+					"name" : "RobotHomework",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "array_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-array_demo-Debug-cfbb421835799cbadc5d.json",
+					"name" : "array_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "calloc_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-calloc_example-Debug-4b2ed1b96999fc0cfb20.json",
+					"name" : "calloc_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dynamic_arrays_structures::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dynamic_arrays_structures-Debug-b6c8608edf6766c62f61.json",
+					"name" : "dynamic_arrays_structures",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab1-Debug-dc02e4384adf6d02be1e.json",
+					"name" : "lab1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab1_profile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab1_profile-Debug-18a129ebddebf811e6ba.json",
+					"name" : "lab1_profile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab1_variables::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab1_variables-Debug-7a43fd1816568a378b92.json",
+					"name" : "lab1_variables",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab7_copy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab7_copy-Debug-acc865e1f2e380340520.json",
+					"name" : "lab7_copy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab7_memory::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab7_memory-Debug-fe7b5ef104ac2e1bba66.json",
+					"name" : "lab7_memory",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab7_range::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab7_range-Debug-421a35a4ff88ecbc3617.json",
+					"name" : "lab7_range",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab7_riddler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab7_riddler-Debug-e03a8121835f573fb5b4.json",
+					"name" : "lab7_riddler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab8_dictionary::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab8_dictionary-Debug-f15f192f892c2c0320de.json",
+					"name" : "lab8_dictionary",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab8_matrix_mult::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab8_matrix_mult-Debug-6e31313b9db6e544a557.json",
+					"name" : "lab8_matrix_mult",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab8_tensor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab8_tensor-Debug-4c17d28c26b73a6d2e2e.json",
+					"name" : "lab8_tensor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "malloc_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-malloc_example-Debug-a19aa6619c891aff2513.json",
+					"name" : "malloc_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matrix_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrix_demo-Debug-47b5d92801fd34ed8a83.json",
+					"name" : "matrix_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "max_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-max_demo-Debug-390ab8b3c2b4854c5d01.json",
+					"name" : "max_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "memory_free::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-memory_free-Debug-cbdb9d63fc3480a9d078.json",
+					"name" : "memory_free",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "movie_database_utils::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-movie_database_utils-Debug-8a474893ccbea476284b.json",
+					"name" : "movie_database_utils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pointer_allocation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pointer_allocation-Debug-69cf2827f537cf7c1c4a.json",
+					"name" : "pointer_allocation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practice_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practice_demo-Debug-9f1fac069197340b8062.json",
+					"name" : "practice_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "realloc_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-realloc_example-Debug-fcb3c9acfecbde1a748b.json",
+					"name" : "realloc_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "snakes_and_ladders::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-snakes_and_ladders-Debug-0e14a9b56cd581d0d26f.json",
+					"name" : "snakes_and_ladders",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "struct_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-struct_example-Debug-1568929c661933a61e85.json",
+					"name" : "struct_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "struct_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-struct_main-Debug-f7c50c26dced8dbeecef.json",
+					"name" : "struct_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "worked_example1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-worked_example1-Debug-c6d4f5acd45565455508.json",
+					"name" : "worked_example1",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/cizak/Desktop/CSE220/out/build/x64-Debug",
+		"source" : "C:/Users/cizak/Desktop/CSE220"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

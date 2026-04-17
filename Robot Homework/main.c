@@ -12,7 +12,7 @@ int main()
 
     double battery;
 
-    printf("Enter number of coordinates for obstacles: ");
+    /*printf("Enter number of coordinates for obstacles: ");
     scanf("%d", &nObstacles);
 
     printf("Enter number of coordinates for samples: ");
@@ -42,6 +42,32 @@ int main()
     printf("Enter Y coordinates of samples: ");
     for (int i = 0; i < nSamples; i++) {
         scanf("%d", &samp_y[i]);
+    }*/
+
+    nObstacles = rand() % 5;
+    nSamples = rand() % 5;
+
+    obs_x = malloc(nObstacles * sizeof(int));
+    obs_y = malloc(nObstacles * sizeof(int));
+
+    samp_x = malloc(nSamples * sizeof(int));
+    samp_y = malloc(nSamples * sizeof(int));
+
+    for (int i = 0; i < nObstacles; i++) {
+        obs_x[i] = rand() % 10;
+    }
+
+    for (int i = 0; i < nObstacles; i++) {
+        obs_y[i] = rand() % 10;
+    }
+
+    
+    for (int i = 0; i < nSamples; i++) {
+        samp_x[i] = rand() % 10;
+    }
+
+    for (int i = 0; i < nSamples; i++) {
+        samp_y[i] = rand() % 10;
     }
 
     printf("Enter initial X: ");
