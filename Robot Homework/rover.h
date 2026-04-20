@@ -5,22 +5,21 @@
 #ifndef ROVER_H
 #define ROVER_H
 #include "map.h"
+#include "objects.h"
 
 /**
 * Prints the current status of the rover.
 */
-void print_status(int rover_x, int rover_y, double battery);
+void print_status(Rover *rover);
 
 /**
 * Checks if a move is valid and returns a status code.
 */
-int scan_current_tile(int rover_x, int rover_y, double battery,
-    char my_map[MAP_HEIGHT][MAP_WIDTH]);
+int scan_current_tile(Rover *rover, World *world, int new_rover_x, int new_rover_y);
 
 /**
 * Moves the rover sequentially toward a target, one unit at a time.
 */
-void perform_move(int *rover_x, int *rover_y, double *battery,
-    char my_map[MAP_HEIGHT][MAP_WIDTH], char *direction, int distance);
+void perform_move(Rover* rover, World* world, char* direction, int distance);
     
 #endif // ROVER_H

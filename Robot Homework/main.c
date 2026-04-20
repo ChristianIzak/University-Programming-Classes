@@ -3,17 +3,17 @@
 #include <string.h>
 #include "rover.h"
 #include "map.h"
+#include "objects.h"
 
 int main()
 {
 
-    char my_map[MAP_HEIGHT][MAP_WIDTH];
+    World world;
+    Rover rover = {0, 0, 0};
 
-    int nObstacles, nSamples, *obs_x, *obs_y, *samp_x, *samp_y, rover_x, rover_y;
+    int nObstacles, nSamples, *obs_x, *obs_y, *samp_x, *samp_y;
 
-    double battery;
-
-    /*printf("Enter number of coordinates for obstacles: ");
+    printf("Enter number of coordinates for obstacles: ");
     scanf("%d", &nObstacles);
 
     printf("Enter number of coordinates for samples: ");
@@ -43,44 +43,18 @@ int main()
     printf("Enter Y coordinates of samples: ");
     for (int i = 0; i < nSamples; i++) {
         scanf("%d", &samp_y[i]);
-    }*/
-
-    nObstacles = rand() % 5;
-    nSamples = rand() % 5;
-
-    obs_x = malloc(nObstacles * sizeof(int));
-    obs_y = malloc(nObstacles * sizeof(int));
-
-    samp_x = malloc(nSamples * sizeof(int));
-    samp_y = malloc(nSamples * sizeof(int));
-
-    for (int i = 0; i < nObstacles; i++) {
-        obs_x[i] = rand() % 10;
-    }
-
-    for (int i = 0; i < nObstacles; i++) {
-        obs_y[i] = rand() % 10;
-    }
-
-    
-    for (int i = 0; i < nSamples; i++) {
-        samp_x[i] = rand() % 10;
-    }
-
-    for (int i = 0; i < nSamples; i++) {
-        samp_y[i] = rand() % 10;
     }
 
     printf("Enter initial X: ");
-    scanf("%d", &rover_x);
+    scanf("%d", &rover.x);
 
     printf("Enter initial Y: ");
-    scanf("%d", &rover_y);
+    scanf("%d", &rover.y);
 
     printf("Enter initial battery: ");
-    scanf("%lf", &battery);
+    scanf("%lf", &rover.battery);
 
-    init_map(my_map, obs_x, obs_y, nObstacles, samp_x, samp_y, nSamples);
+    init_map(&world, obs_x, obs_y, nObstacles, samp_x, samp_y, nSamples);
 
     // Clear the input buffer before switching to fgets
     int c;
@@ -104,12 +78,12 @@ int main()
         if(strcmp(command, "quit") == 0) {
             break;
         } else if(strcmp(command, "status") == 0) {
-            print_status(rover_x, rover_y, battery);
+            print_status(&rover);
         } else if(strcmp(command, "map") == 0) {
-            print_map(my_map, rover_x, rover_y);
+            print_map(&world, &rover);
         } else if(strcmp(command, "move") == 0) {
             sscanf(line, "%*s %s %d", direction, &distance);
-            perform_move(&rover_x, &rover_y, &battery, my_map, direction, distance);
+            perform_move(&rover, &world, direction, distance);
         } else {
             printf("Unknown command. ");
         }

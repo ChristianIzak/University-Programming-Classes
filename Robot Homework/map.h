@@ -3,9 +3,9 @@
  */
 #ifndef MAP_H
 #define MAP_H
-// Define the map dimensions
-#define MAP_HEIGHT 10
-#define MAP_WIDTH 10
+
+#include "objects.h"
+
 /**
  * Initializes a 2D map array in memory.
  * It first fills the map with ’.’ (open terrain).
@@ -13,14 +13,13 @@
  * based on the coordinate arrays provided.
  *
  */
-void init_map(char my_map[MAP_HEIGHT][MAP_WIDTH],
+void init_map(World *world,
               int *obs_x, int *obs_y, int nObstacles,
               int *samp_x, int *samp_y, int nSamples);
 /**
  * Prints the map to the console.
  * It prints the rover’s ’R’ at its current position.
  */
-void print_map(char my_map[MAP_HEIGHT][MAP_WIDTH],
-               int rover_x, int rover_y);
+void print_map(World *world, Rover *rover);
 
 #endif // MAP_H
